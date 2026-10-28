@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kabiyet Sacco Limited | Savings &amp; Credit Co-operative Society, Nandi County</title>
+<meta name="description" content="Kabiyet Sacco Limited is a member-owned Savings and Credit Co-operative Society based in Kabiyet, Nandi County, Kenya — savings, affordable credit and investment products for farmers, traders and families.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231E5F42' d='M4 13c0-5 4-9 9-9h7v2c0 8-6 13-13 13H4v-2c0-1 .2-2.6 0-4z'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          forest: {
+            50:  '#EEF6F1',
+            100: '#DCEEE2',
+            200: '#B7DCC4',
+            300: '#8FC7A3',
+            400: '#5FA97C',
+            500: '#3A8F63',
+            600: '#2C7350',
+            700: '#1E5F42',
+            800: '#164A34',
+            900: '#0F3826',
+            950: '#08231A'
+          },
+          navy: {
+            50:  '#EAF0F8',
+            100: '#CFDEEE',
+            200: '#9FBEDC',
+            600: '#1B4A78',
+            700: '#163A63',
+            800: '#0F2A4D',
+            900: '#0A1F3D',
+            950: '#071633'
+          },
+          gold: {
+            50:  '#FDF7E7',
+            100: '#FBEFC9',
+            200: '#F5DE93',
+            300: '#EFC96A',
+            400: '#E3B94A',
+            500: '#C99A2E',
+            600: '#A9781E',
+            700: '#8A5F16'
+          }
+        },
+        fontFamily: {
+          sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif']
+        }
+      }
+    }
+  };
+</script>
+
+<style>
+  :focus-visible {
+    outline: 2px solid #C99A2E;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 9999px;
+    background: #DCEEE2;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 9999px;
+    background: #1E5F42;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 1px #1E5F42;
+    cursor: pointer;
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #ffffff;
+    border-radius: 9999px;
+    background: #1E5F42;
+    box-shadow: 0 0 0 1px #1E5F42;
+    cursor: pointer;
+  }
+  input[type="range"]::-moz-range-track {
+    height: 6px;
+    border-radius: 9999px;
+    background: #DCEEE2;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>
+</head>
+
+<body class="font-sans text-slate-700 antialiased bg-white">
+
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[999] focus:rounded-md focus:bg-gold-400 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-navy-950">
+  Skip to main content
+</a>
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur transition-shadow duration-200">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+
+    <a href="#home" class="flex items-center gap-2 shrink-0">
+      <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-forest-700 text-white">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+          <path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 13-13 13H4v-2c0-1 .2-2.6 0-4z"/>
+          <path d="M6 18c4-5 9-9 14-11"/>
+        </svg>
+      </span>
+      <span class="text-lg font-bold tracking-tight text-forest-900">Kabiyet Sacco</span>
+    </a>
+
+    <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
+      <a href="#home" class="text-sm font-medium text-slate-600 hover:text-forest-700">Home</a>
+      <a href="#about" class="text-sm font-medium text-slate-600 hover:text-forest-700">About Us</a>
+      <a href="#products" class="text-sm font-medium text-slate-600 hover:text-forest-700">Products &amp; Services</a>
+      <a href="#calculator" class="text-sm font-medium text-slate-600 hover:text-forest-700">Loan Calculator</a>
+      <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-forest-700">Contact Us</a>
+    </nav>
+
+    <div class="hidden items-center gap-3 lg:flex">
+      <button type="button" class="portal-login-trigger rounded-md border border-navy-700 px-4 py-2 text-sm font-semibold text-navy-800 hover:bg-navy-50">
+        Member Portal Login
+      </button>
+      <a href="#join" class="rounded-md bg-gold-400 px-4 py-2 text-sm font-semibold text-navy-950 hover:bg-gold-300">
+        Become a Member
+      </a>
+    </div>
+
+    <button id="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" class="inline-flex items-center justify-center rounded-md p-2 text-forest-900 lg:hidden">
+      <span class="sr-only">Toggle navigation menu</span>
+      <svg id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+        <path d="M4 7h16M4 12h16M4 17h16"/>
+      </svg>
+      <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="hidden h-6 w-6">
+        <path d="M6 6l12 12M18 6L6 18"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden border-t border-slate-200 bg-white lg:hidden">
+    <nav class="flex flex-col gap-1 px-4 py-3" aria-label="Mobile">
+      <a href="#home" class="mobile-link rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-forest-50">Home</a>
+      <a href="#about" class="mobile-link rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-forest-50">About Us</a>
+      <a href="#products" class="mobile-link rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-forest-50">Products &amp; Services</a>
+      <a href="#calculator" class="mobile-link rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-forest-50">Loan Calculator</a>
+      <a href="#contact" class="mobile-link rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-forest-50">Contact Us</a>
+      <div class="mt-2 flex flex-col gap-2 border-t border-slate-200 pt-3">
+        <button type="button" class="portal-login-trigger w-full rounded-md border border-navy-700 px-4 py-2 text-sm font-semibold text-navy-800">
+          Member Portal Login
+        </button>
+        <a href="#join" class="mobile-link w-full rounded-md bg-gold-400 px-4 py-2 text-center text-sm font-semibold text-navy-950">
+          Become a Member
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="relative overflow-hidden bg-forest-950 scroll-mt-20">
+    <svg class="pointer-events-none absolute inset-0 h-full w-full opacity-[0.14]" viewBox="0 0 800 500" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 430 Q 200 390 400 430 T 800 430" stroke="#5FA97C" stroke-width="2" fill="none"/>
+      <path d="M0 370 Q 200 330 400 370 T 800 370" stroke="#5FA97C" stroke-width="2" fill="none"/>
+      <path d="M0 310 Q 200 270 400 310 T 800 310" stroke="#5FA97C" stroke-width="2" fill="none"/>
+      <path d="M0 250 Q 200 210 400 250 T 800 250" stroke="#5FA97C" stroke-width="2" fill="none"/>
+      <path d="M0 190 Q 200 150 400 190 T 800 190" stroke="#5FA97C" stroke-width="2" fill="none"/>
+    </svg>
+
+    <div class="relative mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:items-center md:py-28 lg:px-8">
+      <div>
+        <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl">
+          Save with purpose. Borrow with confidence. Grow with Kabiyet.
+        </h1>
+        <p class="mt-6 max-w-xl text-lg text-forest-100">
+          Kabiyet Sacco Limited is a member-owned savings and credit co-operative serving farmers, traders and
+          families across Nandi County — with secure savings, affordable credit and dividends that grow with
+          every season.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="#join" class="rounded-md bg-gold-400 px-6 py-3 text-center text-sm font-semibold text-navy-950 hover:bg-gold-300">
+            Join Kabiyet Sacco
+          </a>
+          <a href="#products" class="rounded-md border border-white/40 px-6 py-3 text-center text-sm font-semibold text-white hover:bg-white/10">
+            Explore Products
+          </a>
+        </div>
+      </div>
+
+      <div class="hidden md:block" aria-hidden="true">
+        <svg viewBox="0 0 320 260" class="mx-auto w-full max-w-sm">
+          <rect x="20"  y="180" width="30" height="60"  rx="3" fill="#2C7350"/>
+          <rect x="70"  y="150" width="30" height="90"  rx="3" fill="#3A8F63"/>
+          <rect x="120" y="110" width="30" height="130" rx="3" fill="#5FA97C"/>
+          <rect x="170" y="70"  width="30" height="170" rx="3" fill="#8FC7A3"/>
+          <rect x="220" y="30"  width="30" height="210" rx="3" fill="#E3B94A"/>
+          <path d="M35 175 L85 145 L135 100 L185 60 L235 20" stroke="#F5DE93" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="235" cy="20" r="6" fill="#F5DE93"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="scroll-mt-20 bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-12 lg:grid-cols-2 lg:items-start">
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight text-forest-900 sm:text-4xl">Built by members, for members</h2>
+          <p class="mt-5 text-slate-600">
+            Kabiyet Sacco Limited was started by a small group of tea farmers and traders in Kabiyet who pooled
+            their savings so members could borrow from one another instead of relying on moneylenders. Since
+            1998 we've grown into a full deposit-taking co-operative, but the idea hasn't changed: your money
+            should work as hard as you do.
+          </p>
+          <p class="mt-4 text-slate-600">
+            Every dividend, every loan rate and every product we offer is decided by a board elected from among
+            our own members — because the Sacco's growth should be shared by the people who built it.
+          </p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-3 lg:gap-4">
+          <div class="rounded-lg border border-slate-200 p-5">
+            <span class="flex h-10 w-10 items-center justify-center rounded-md bg-navy-50 text-navy-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z"/><path d="M9 11l2 2 4-4"/></svg>
+            </span>
+            <h3 class="mt-4 font-semibold text-forest-900">Trust &amp; Security</h3>
+            <p class="mt-1 text-sm text-slate-600">Deposits are safeguarded under SASRA prudential standards, audited books and member oversight.</p>
+          </div>
+          <div class="rounded-lg border border-slate-200 p-5">
+            <span class="flex h-10 w-10 items-center justify-center rounded-md bg-forest-50 text-forest-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M4 18l5-5 4 4 7-8"/><path d="M14 9h6v6"/></svg>
+            </span>
+            <h3 class="mt-4 font-semibold text-forest-900">Shared Growth</h3>
+            <p class="mt-1 text-sm text-slate-600">Interest and dividends are set by members, for members — the Sacco's growth becomes your growth.</p>
+          </div>
+          <div class="rounded-lg border border-slate-200 p-5">
+            <span class="flex h-10 w-10 items-center justify-center rounded-md bg-gold-50 text-gold-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"/></svg>
+            </span>
+            <h3 class="mt-4 font-semibold text-forest-900">Community First</h3>
+            <p class="mt-1 text-sm text-slate-600">From tea bonuses to trading profits, our products follow how Kabiyet actually earns and spends.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section id="impact" class="scroll-mt-20 bg-navy-900 py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-center text-2xl font-bold text-white sm:text-3xl">What our members have built together</h2>
+      <div class="mt-12 grid grid-cols-2 gap-y-10 md:grid-cols-4">
+        <div class="text-center md:border-l md:border-white/15 md:px-6 md:first:border-l-0">
+          <p class="text-3xl font-extrabold text-gold-300 sm:text-4xl">12,600+</p>
+          <p class="mt-2 text-sm text-navy-100">Active Members</p>
+        </div>
+        <div class="text-center md:border-l md:border-white/15 md:px-6">
+          <p class="text-3xl font-extrabold text-gold-300 sm:text-4xl">KES 1.8B+</p>
+          <p class="mt-2 text-sm text-navy-100">Member Assets</p>
+        </div>
+        <div class="text-center md:border-l md:border-white/15 md:px-6">
+          <p class="text-3xl font-extrabold text-gold-300 sm:text-4xl"><span id="years-count">27+</span></p>
+          <p class="mt-2 text-sm text-navy-100">Years of Service</p>
+        </div>
+        <div class="text-center md:border-l md:border-white/15 md:px-6">
+          <p class="text-3xl font-extrabold text-gold-300 sm:text-4xl">KES 240M+</p>
+          <p class="mt-2 text-sm text-navy-100">Dividends Paid (5 yrs)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS & SERVICES ============ -->
+  <section id="products" class="scroll-mt-20 bg-forest-50 py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight text-forest-900 sm:text-4xl">Products built around how you already earn</h2>
+        <p class="mt-4 text-slate-600">Whether your income comes from a harvest, a shop counter or a salary, there's a savings or loan product here designed for that rhythm.</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="mt-10 inline-flex rounded-lg border border-slate-200 bg-white p-1" role="tablist" aria-label="Products and services">
+        <button id="tab-savings" type="button" role="tab" aria-selected="true" aria-controls="panel-savings" tabindex="0"
+          class="flex items-center gap-2 rounded-md bg-forest-700 px-4 py-2 text-sm font-semibold text-white">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 13-13 13H4v-2c0-1 .2-2.6 0-4z"/></svg>
+          Savings Products
+        </button>
+        <button id="tab-loans" type="button" role="tab" aria-selected="false" aria-controls="panel-loans" tabindex="-1"
+          class="flex items-center gap-2 rounded-md bg-transparent px-4 py-2 text-sm font-semibold text-slate-600">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><rect x="2" y="7" width="20" height="12" rx="2"/><circle cx="12" cy="13" r="3"/></svg>
+          Loan Products
+        </button>
+      </div>
+
+      <!-- Savings panel -->
+      <div id="panel-savings" role="tabpanel" aria-labelledby="tab-savings" class="mt-8 grid gap-6 sm:grid-cols-2">
+        <article class="rounded-lg border border-slate-200 bg-white p-6 border-l-4 border-l-forest-500">
+          <h3 class="font-semibold text-forest-900">Faida Ordinary Savings</h3>
+          <p class="mt-1 text-sm text-slate-600">Your core membership savings account.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Competitive annual dividend, paid every financial year</li>
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Deposit or withdraw any time via Paybill or branch</li>
+          </ul>
+          <span class="mt-4 inline-block rounded-full bg-gold-50 px-3 py-1 text-xs font-semibold text-gold-700">Dividend: up to 12% p.a.*</span>
+        </article>
+
+        <article class="rounded-lg border border-slate-200 bg-white p-6 border-l-4 border-l-forest-500">
+          <h3 class="font-semibold text-forest-900">Amana Fixed Deposit</h3>
+          <p class="mt-1 text-sm text-slate-600">Lock in a lump sum for a higher, guaranteed return.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Terms of 3, 6 or 12 months</li>
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Ideal for harvest proceeds or business profits</li>
+          </ul>
+          <span class="mt-4 inline-block rounded-full bg-gold-50 px-3 py-1 text-xs font-semibold text-gold-700">Rate: 8%&ndash;10% p.a.*</span>
+        </article>
+
+        <article class="rounded-lg border border-slate-200 bg-white p-6 border-l-4 border-l-forest-500">
+          <h3 class="font-semibold text-forest-900">Chipukizi Junior Savings</h3>
+          <p class="mt-1 text-sm text-slate-600">A future fund opened by a parent or guardian for a child.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Small, regular deposits build steadily over time</li>
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Bonus interest credited on the child's 18th birthday</li>
+          </ul>
+          <span class="mt-4 inline-block rounded-full bg-gold-50 px-3 py-1 text-xs font-semibold text-gold-700">From KES 200/month</span>
+        </article>
+
+        <article class="rounded-lg border border-slate-200 bg-white p-6 border-l-4 border-l-forest-500">
+          <h3 class="font-semibold text-forest-900">Lengo Target Savings</h3>
+          <p class="mt-1 text-sm text-slate-600">Save toward a goal — school fees, land, a wedding, travel.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Set your own target amount and date</li>
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Flexible top-ups, no penalty for finishing early</li>
+          </ul>
+          <span class="mt-4 inline-block rounded-full bg-gold-50 px-3 py-1 text-xs font-semibold text-gold-700">Matches ordinary savings rate</span>
+        </article>
+      </div>
+
+      <!-- Loans panel -->
+      <div id="panel-loans" role="tabpanel" aria-labelledby="tab-loans" class="mt-8 hidden grid gap-6 sm:grid-cols-2">
+        <article class="rounded-lg border border-slate-200 bg-white p-6 border-l-4 border-l-gold-400">
+          <h3 class="font-semibold text-forest-900">Maendeleo Development Loan</h3>
+          <p class="mt-1 text-sm text-slate-600">General-purpose credit for development projects.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Borrow up to 3&times; your deposits</li>
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Repay over up to 48 months, reducing balance</li>
+          </ul>
+          <span class="mt-4 inline-block rounded-full bg-gold-50 px-3 py-1 text-xs font-semibold text-gold-700">From 12% p.a. reducing balance*</span>
+        </article>
+
+        <article class="rounded-lg border border-slate-200 bg-white p-6 border-l-4 border-l-gold-400">
+          <h3 class="font-semibold text-forest-900">Dharura Emergency Loan</h3>
+          <p class="mt-1 text-sm text-slate-600">Fast-tracked credit for urgent needs.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Approved and disbursed within 24&ndash;48 hours</li>
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>No collateral required for qualifying members</li>
+          </ul>
+          <span class="mt-4 inline-block rounded-full bg-gold-50 px-3 py-1 text-xs font-semibold text-gold-700">1% per month, flat*</span>
+        </article>
+
+        <article class="rounded-lg border border-slate-200 bg-white p-6 border-l-4 border-l-gold-400">
+          <h3 class="font-semibold text-forest-900">Kilimo Farm Input Loan</h3>
+          <p class="mt-1 text-sm text-slate-600">Timed to the planting season for tea, maize and dairy inputs.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Grace period aligned to harvest or milk payments</li>
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Open to members with active farming income</li>
+          </ul>
+          <span class="mt-4 inline-block rounded-full bg-gold-50 px-3 py-1 text-xs font-semibold text-gold-700">From 10% p.a. reducing balance*</span>
+        </article>
+
+        <article class="rounded-lg border border-slate-200 bg-white p-6 border-l-4 border-l-gold-400">
+          <h3 class="font-semibold text-forest-900">Mali Asset Finance</h3>
+          <p class="mt-1 text-sm text-slate-600">Finance a motorbike, vehicle or dairy/farm equipment.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>The asset itself forms part of the loan security</li>
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Repay over up to 36 months</li>
+          </ul>
+          <span class="mt-4 inline-block rounded-full bg-gold-50 px-3 py-1 text-xs font-semibold text-gold-700">From 13% p.a. reducing balance*</span>
+        </article>
+
+        <article class="rounded-lg border border-slate-200 bg-white p-6 border-l-4 border-l-gold-400 sm:col-span-2 sm:max-w-md">
+          <h3 class="font-semibold text-forest-900">Elimu School Fees Loan</h3>
+          <p class="mt-1 text-sm text-slate-600">Paid directly to the learning institution.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Timed to open at the start of each school term</li>
+            <li class="flex gap-2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-forest-600"><path d="M4 10l4 4 8-8"/></svg>Top up mid-term if a shortfall arises</li>
+          </ul>
+          <span class="mt-4 inline-block rounded-full bg-gold-50 px-3 py-1 text-xs font-semibold text-gold-700">1% per month, flat*</span>
+        </article>
+      </div>
+
+      <p class="mt-6 text-xs text-slate-500">*Indicative rates, reviewed periodically by the board. Ask a branch officer for the current schedule.</p>
+    </div>
+  </section>
+
+  <!-- ============ LOAN CALCULATOR ============ -->
+  <section id="calculator" class="scroll-mt-20 bg-white py-20">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight text-forest-900 sm:text-4xl">See what a loan could look like</h2>
+        <p class="mt-4 text-slate-600">Adjust the figures below for an estimate. This is a guide only — your actual offer depends on your deposit history and the loan product you choose.</p>
+      </div>
+
+      <div class="mt-10 overflow-hidden rounded-xl border border-slate-200 shadow-sm lg:grid lg:grid-cols-2">
+        <!-- Inputs -->
+        <div class="space-y-6 bg-white p-6 sm:p-8">
+          <div>
+            <div class="flex items-baseline justify-between">
+              <label for="loan-amount" class="text-sm font-medium text-slate-700">Loan Amount (KES)</label>
+            </div>
+            <input type="number" id="loan-amount" value="150000" min="5000" max="3000000" step="1000"
+              class="mt-2 w-full rounded-md border border-slate-300 px-3 py-2 text-sm">
+            <input type="range" id="loan-amount-range" value="150000" min="5000" max="3000000" step="1000" class="mt-3">
+          </div>
+
+          <div>
+            <label for="loan-period" class="text-sm font-medium text-slate-700">Repayment Period (Months)</label>
+            <input type="number" id="loan-period" value="24" min="3" max="60" step="1"
+              class="mt-2 w-full rounded-md border border-slate-300 px-3 py-2 text-sm">
+            <input type="range" id="loan-period-range" value="24" min="3" max="60" step="1" class="mt-3">
+          </div>
+
+          <div>
+            <label for="loan-rate" class="text-sm font-medium text-slate-700">Interest Rate (<span id="rate-basis-hint">% per annum, reducing balance</span>)</label>
+            <input type="number" id="loan-rate" value="12" min="0" max="30" step="0.1"
+              class="mt-2 w-full rounded-md border border-slate-300 px-3 py-2 text-sm">
+          </div>
+
+          <div>
+            <label for="rate-basis" class="text-sm font-medium text-slate-700">Rate Basis</label>
+            <select id="rate-basis" class="mt-2 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm">
+              <option value="annual-reducing" selected>Reducing balance &mdash; annual rate</option>
+              <option value="monthly-flat">Flat rate &mdash; monthly</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="flex flex-col justify-center gap-6 bg-forest-900 p-6 text-white sm:p-8" aria-live="polite">
+          <div>
+            <p class="text-sm text-forest-200">Estimated Monthly Repayment</p>
+            <p id="result-monthly" class="mt-1 text-3xl font-extrabold text-gold-300 sm:text-4xl">KES 0</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4 border-t border-white/15 pt-6">
+            <div>
+              <p class="text-xs text-forest-200">Total Interest Payable</p>
+              <p id="result-interest" class="mt-1 text-lg font-semibold">KES 0</p>
+            </div>
+            <div>
+              <p class="text-xs text-forest-200">Total Repayment</p>
+              <p id="result-total" class="mt-1 text-lg font-semibold">KES 0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW TO JOIN ============ -->
+  <section id="join" class="scroll-mt-20 bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight text-forest-900 sm:text-4xl">Becoming a member takes four steps</h2>
+        <p class="mt-4 text-slate-600">Most people are saving with us within a week of starting the process.</p>
+      </div>
+
+      <div class="relative mt-14">
+        <div class="absolute left-0 right-0 top-5 hidden h-0.5 bg-forest-200 md:block" aria-hidden="true"></div>
+        <div class="grid gap-10 md:grid-cols-4">
+
+          <div class="text-center md:text-left">
+            <div class="relative z-10 mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-forest-700 font-semibold text-white ring-8 ring-white md:mx-0">1</div>
+            <h3 class="mt-4 font-semibold text-forest-900">Fill the Registration Form</h3>
+            <p class="mt-1 text-sm text-slate-600">Pick one up at the Kabiyet branch, or download it, and provide your personal and next-of-kin details.</p>
+          </div>
+
+          <div class="text-center md:text-left">
+            <div class="relative z-10 mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-forest-700 font-semibold text-white ring-8 ring-white md:mx-0">2</div>
+            <h3 class="mt-4 font-semibold text-forest-900">Submit ID &amp; KRA PIN</h3>
+            <p class="mt-1 text-sm text-slate-600">Attach a copy of your national ID and KRA PIN certificate, plus two passport photos.</p>
+          </div>
+
+          <div class="text-center md:text-left">
+            <div class="relative z-10 mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-forest-700 font-semibold text-white ring-8 ring-white md:mx-0">3</div>
+            <h3 class="mt-4 font-semibold text-forest-900">Pay the Membership Fee</h3>
+            <p class="mt-1 text-sm text-slate-600">Pay your one-off registration fee and minimum share capital via Paybill or at the counter.</p>
+          </div>
+
+          <div class="text-center md:text-left">
+            <div class="relative z-10 mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-forest-700 font-semibold text-white ring-8 ring-white md:mx-0">4</div>
+            <h3 class="mt-4 font-semibold text-forest-900">Start Saving &amp; Access Credit</h3>
+            <p class="mt-1 text-sm text-slate-600">Begin your savings plan. Once you've built a qualifying deposit history, you're eligible to borrow.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimonials" class="scroll-mt-20 bg-forest-50 py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-forest-900 sm:text-4xl">Members, in their own words</h2>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <figure class="rounded-lg border border-slate-200 bg-white p-6">
+          <span class="text-4xl font-bold leading-none text-gold-300">&ldquo;</span>
+          <blockquote class="mt-2 text-sm text-slate-600">
+            The Kilimo loan let me buy fertiliser before the long rains instead of waiting for the tea bonus.
+            I paid it back after the first leaf collections and still had savings left over.
+          </blockquote>
+          <figcaption class="mt-4 flex items-center gap-3">
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-forest-100 text-sm font-semibold text-forest-800">EC</span>
+            <span>
+              <span class="block text-sm font-semibold text-forest-900">Everlyne Chebet</span>
+              <span class="block text-xs text-slate-500">Tea farmer, Kabiyet</span>
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-lg border border-slate-200 bg-white p-6">
+          <span class="text-4xl font-bold leading-none text-gold-300">&ldquo;</span>
+          <blockquote class="mt-2 text-sm text-slate-600">
+            I used Mali Asset Finance for a motorbike to deliver stock around Kabiyet Town. The repayments
+            are lower than what I used to pay a boda hire, so my shop keeps more of what it makes.
+          </blockquote>
+          <figcaption class="mt-4 flex items-center gap-3">
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-navy-100 text-sm font-semibold text-navy-800">SK</span>
+            <span>
+              <span class="block text-sm font-semibold text-forest-900">Samuel Kiplagat</span>
+              <span class="block text-xs text-slate-500">Shop owner, Kabiyet Town</span>
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-lg border border-slate-200 bg-white p-6">
+          <span class="text-4xl font-bold leading-none text-gold-300">&ldquo;</span>
+          <blockquote class="mt-2 text-sm text-slate-600">
+            I opened a Chipukizi account for each of my children the week they were born. Watching the
+            balance grow every month has been one of the best decisions I've made for their schooling.
+          </blockquote>
+          <figcaption class="mt-4 flex items-center gap-3">
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-gold-100 text-sm font-semibold text-gold-700">GJ</span>
+            <span>
+              <span class="block text-sm font-semibold text-forest-900">Grace Jepkosgei</span>
+              <span class="block text-xs text-slate-500">Primary school teacher</span>
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="scroll-mt-20 bg-navy-950 py-20 text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Talk to us</h2>
+
+      <div class="mt-12 grid gap-12 lg:grid-cols-2">
+        <div>
+          <ul class="space-y-6">
+            <li class="flex gap-4">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-gold-300"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <div>
+                <p class="font-semibold">Head Office</p>
+                <p class="mt-1 text-sm text-navy-100">Kabiyet Sacco Plaza, Kabiyet Town<br>P.O. Box 145&ndash;30301, Kabiyet, Nandi County, Kenya</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-gold-300"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L15 12l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"/></svg>
+              <div>
+                <p class="font-semibold">Phone</p>
+                <p class="mt-1 text-sm text-navy-100">+254 700 123 456 (Head Office)<br>+254 733 987 654 (Customer Care)</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-gold-300"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <div>
+                <p class="font-semibold">Email</p>
+                <p class="mt-1 text-sm text-navy-100">info@kabiyetsacco.co.ke</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-gold-300"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              <div>
+                <p class="font-semibold">Working Hours</p>
+                <p class="mt-1 text-sm text-navy-100">Mon&ndash;Fri: 8:00 AM&ndash;5:00 PM<br>Sat: 8:00 AM&ndash;1:00 PM &middot; Sun &amp; holidays: Closed</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="rounded-xl bg-white p-6 text-slate-700 sm:p-8">
+          <!-- In production, wire this form to your email/CRM endpoint (e.g. Formspree, a backend API, etc.) -->
+          <form id="contact-form" class="space-y-4" novalidate>
+            <div>
+              <label for="contact-name" class="text-sm font-medium text-slate-700">Name</label>
+              <input type="text" id="contact-name" name="name" required autocomplete="name"
+                class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm">
+            </div>
+            <div>
+              <label for="contact-email" class="text-sm font-medium text-slate-700">Email or Phone</label>
+              <input type="text" id="contact-email" name="contact" required
+                class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm">
+            </div>
+            <div>
+              <label for="contact-message" class="text-sm font-medium text-slate-700">Message</label>
+              <textarea id="contact-message" name="message" rows="4" required
+                class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"></textarea>
+            </div>
+            <button type="submit" class="w-full rounded-md bg-forest-700 py-2.5 text-sm font-semibold text-white hover:bg-forest-800">
+              Send Message
+            </button>
+            <p id="form-success" tabindex="-1" role="status" class="hidden rounded-md bg-forest-50 px-3 py-2 text-sm text-forest-800">
+              Thanks &mdash; your message has been received. A member of our team will get back to you shortly.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-navy-950 text-navy-100">
+  <div class="mx-auto max-w-7xl border-t border-white/10 px-4 py-12 sm:px-6 lg:px-8">
+    <div class="grid gap-10 md:grid-cols-4">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-forest-700 text-white">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 13-13 13H4v-2c0-1 .2-2.6 0-4z"/><path d="M6 18c4-5 9-9 14-11"/></svg>
+          </span>
+          <span class="text-lg font-bold text-white">Kabiyet Sacco</span>
+        </div>
+        <p class="mt-4 text-sm">A member-owned savings and credit co-operative serving Kabiyet and Nandi County since 1998.</p>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-semibold text-white">Quick Links</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="#about" class="hover:text-white">About Us</a></li>
+          <li><a href="#products" class="hover:text-white">Products &amp; Services</a></li>
+          <li><a href="#calculator" class="hover:text-white">Loan Calculator</a></li>
+          <li><a href="#join" class="hover:text-white">Become a Member</a></li>
+          <li><button type="button" class="portal-login-trigger hover:text-white">Member Portal Login</button></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-semibold text-white">Contact</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li>Kabiyet Town, Nandi County</li>
+          <li>+254 700 123 456</li>
+          <li>info@kabiyetsacco.co.ke</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-semibold text-white">Regulatory Notice</h3>
+        <p class="mt-4 text-sm">Kabiyet Sacco Limited is registered under the Co-operative Societies Act (Cap. 490) and licensed by the Sacco Societies Regulatory Authority (SASRA) as a deposit-taking Sacco.</p>
+      </div>
+    </div>
+
+    <div class="mt-10 border-t border-white/10 pt-6 text-center text-xs text-navy-200">
+      &copy; <span id="year">2026</span> Kabiyet Sacco Limited. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MEMBER PORTAL MODAL ============ -->
+<div id="portal-modal" class="hidden fixed inset-0 z-[100]" role="dialog" aria-modal="true" aria-labelledby="portal-modal-title">
+  <div id="portal-modal-backdrop" class="absolute inset-0 bg-navy-950/70"></div>
+  <div class="relative flex min-h-full items-center justify-center p-4">
+    <div class="w-full max-w-sm rounded-lg bg-white p-6 shadow-xl">
+      <div class="flex items-start justify-between">
+        <h2 id="portal-modal-title" class="text-lg font-semibold text-forest-900">Member Portal Login</h2>
+        <button id="portal-modal-close" type="button" aria-label="Close login dialog" class="rounded text-slate-400 hover:text-slate-600">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <form id="portal-login-form" class="mt-4 space-y-4">
+        <div>
+          <label for="portal-member-no" class="block text-sm font-medium text-slate-700">Member Number</label>
+          <input type="text" id="portal-member-no" name="member-no" placeholder="e.g. KS-0231"
+            class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm">
+        </div>
+        <div>
+          <label for="portal-pin" class="block text-sm font-medium text-slate-700">PIN</label>
+          <input type="password" id="portal-pin" name="pin" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;"
+            class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm">
+        </div>
+        <p id="portal-login-note" class="text-xs text-slate-500">This is a demo interface &mdash; no live accounts are connected.</p>
+        <button type="submit" class="w-full rounded-md bg-forest-700 py-2 text-sm font-semibold text-white hover:bg-forest-800">Log In</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Mobile menu ---------- */
+  var menuToggle = document.getElementById('menu-toggle');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var iconMenu = document.getElementById('icon-menu');
+  var iconClose = document.getElementById('icon-close');
+
+  function setMenuOpen(isOpen) {
+    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    mobileMenu.classList.toggle('hidden', !isOpen);
+    iconMenu.classList.toggle('hidden', isOpen);
+    iconClose.classList.toggle('hidden', !isOpen);
+    document.body.classList.toggle('overflow-hidden', isOpen);
+  }
+
+  menuToggle.addEventListener('click', function () {
+    var isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+    setMenuOpen(!isOpen);
+  });
+
+  document.querySelectorAll('.mobile-link').forEach(function (link) {
+    link.addEventListener('click', function () { setMenuOpen(false); });
+  });
+
+  /* ---------- Sticky header shadow ---------- */
+  var header = document.getElementById('site-header');
+  window.addEventListener('scroll', function () {
+    header.classList.toggle('shadow-md', window.scrollY > 8);
+  });
+
+  /* ---------- Years of service ---------- */
+  var FOUNDED_YEAR = 1998;
+  var yearsCount = document.getElementById('years-count');
+  if (yearsCount) {
+    yearsCount.textContent = (new Date().getFullYear() - FOUNDED_YEAR) + '+';
+  }
+
+  /* ---------- Footer year ---------- */
+  var yearEl = document.getElementById('year');
+  if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+
+  /* ---------- Products & Services tabs ---------- */
+  var tabs = [
+    { btn: 'tab-savings', panel: 'panel-savings' },
+    { btn: 'tab-loans', panel: 'panel-loans' }
+  ];
+
+  function activateTab(btnId) {
+    tabs.forEach(function (t) {
+      var btn = document.getElementById(t.btn);
+      var panel = document.getElementById(t.panel);
+      var active = t.btn === btnId;
+      btn.setAttribute('aria-selected', active ? 'true' : 'false');
+      btn.tabIndex = active ? 0 : -1;
+      panel.classList.toggle('hidden', !active);
+      if (active) {
+        btn.classList.add('bg-forest-700', 'text-white');
+        btn.classList.remove('bg-transparent', 'text-slate-600');
+      } else {
+        btn.classList.remove('bg-forest-700', 'text-white');
+        btn.classList.add('bg-transparent', 'text-slate-600');
+      }
+    });
+  }
+
+  tabs.forEach(function (t, idx) {
+    var btn = document.getElementById(t.btn);
+    btn.addEventListener('click', function () { activateTab(t.btn); });
+    btn.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        var nextIdx = e.key === 'ArrowRight' ? (idx + 1) % tabs.length : (idx - 1 + tabs.length) % tabs.length;
+        var nextBtn = document.getElementById(tabs[nextIdx].btn);
+        nextBtn.focus();
+        activateTab(tabs[nextIdx].btn);
+      }
+    });
+  });
+
+  /* ---------- Loan calculator ---------- */
+  var amountInput = document.getElementById('loan-amount');
+  var amountRange = document.getElementById('loan-amount-range');
+  var periodInput = document.getElementById('loan-period');
+  var periodRange = document.getElementById('loan-period-range');
+  var rateInput = document.getElementById('loan-rate');
+  var basisSelect = document.getElementById('rate-basis');
+  var rateBasisHint = document.getElementById('rate-basis-hint');
+
+  var resultMonthly = document.getElementById('result-monthly');
+  var resultInterest = document.getElementById('result-interest');
+  var resultTotal = document.getElementById('result-total');
+
+  function formatKES(amount) {
+    var rounded = Math.round(amount);
+    if (!isFinite(rounded)) rounded = 0;
+    return 'KES ' + rounded.toLocaleString('en-US');
+  }
+
+  function computeAndRender() {
+    var P = parseFloat(amountInput.value);
+    var n = parseInt(periodInput.value, 10);
+    var r = parseFloat(rateInput.value);
+    var basis = basisSelect.value;
+
+    if (!isFinite(P) || P <= 0 || !isFinite(n) || n <= 0 || !isFinite(r) || r < 0) {
+      resultMonthly.textContent = 'KES 0';
+      resultInterest.textContent = 'KES 0';
+      resultTotal.textContent = 'KES 0';
+      return;
+    }
+
+    var monthlyPayment, totalInterest, totalPayment;
+
+    if (basis === 'monthly-flat') {
+      totalInterest = P * (r / 100) * n;
+      totalPayment = P + totalInterest;
+      monthlyPayment = totalPayment / n;
+    } else {
+      var mRate = (r / 100) / 12;
+      if (mRate === 0) {
+        monthlyPayment = P / n;
+      } else {
+        var factor = Math.pow(1 + mRate, n);
+        monthlyPayment = P * mRate * factor / (factor - 1);
+      }
+      totalPayment = monthlyPayment * n;
+      totalInterest = totalPayment - P;
+    }
+
+    resultMonthly.textContent = formatKES(monthlyPayment);
+    resultInterest.textContent = formatKES(totalInterest);
+    resultTotal.textContent = formatKES(totalPayment);
+  }
+
+  function syncPair(rangeEl, numberEl) {
+    rangeEl.addEventListener('input', function () {
+      numberEl.value = rangeEl.value;
+      computeAndRender();
+    });
+    numberEl.addEventListener('input', function () {
+      var v = parseFloat(numberEl.value);
+      if (!isNaN(v)) {
+        var min = parseFloat(rangeEl.min);
+        var max = parseFloat(rangeEl.max);
+        var clamped = Math.min(Math.max(v, min), max);
+        rangeEl.value = clamped;
+      }
+      computeAndRender();
+    });
+  }
+
+  syncPair(amountRange, amountInput);
+  syncPair(periodRange, periodInput);
+
+  rateInput.addEventListener('input', computeAndRender);
+  basisSelect.addEventListener('change', function () {
+    rateBasisHint.textContent = basisSelect.value === 'monthly-flat'
+      ? '% per month, flat rate'
+      : '% per annum, reducing balance';
+    computeAndRender();
+  });
+
+  computeAndRender();
+
+  /* ---------- Member portal modal ---------- */
+  var portalModal = document.getElementById('portal-modal');
+  var portalBackdrop = document.getElementById('portal-modal-backdrop');
+  var portalClose = document.getElementById('portal-modal-close');
+  var portalForm = document.getElementById('portal-login-form');
+  var portalNote = document.getElementById('portal-login-note');
+  var lastFocused = null;
+
+  function onModalKeydown(e) {
+    if (e.key === 'Escape') { closeModal(); }
+  }
+
+  function openModal() {
+    lastFocused = document.activeElement;
+    portalModal.classList.remove('hidden');
+    document.body.classList.add('overflow-hidden');
+    portalClose.focus();
+    document.addEventListener('keydown', onModalKeydown);
+  }
+
+  function closeModal() {
+    portalModal.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+    document.removeEventListener('keydown', onModalKeydown);
+    if (lastFocused) { lastFocused.focus(); }
+  }
+
+  document.querySelectorAll('.portal-login-trigger').forEach(function (btn) {
+    btn.addEventListener('click', openModal);
+  });
+  portalClose.addEventListener('click', closeModal);
+  portalBackdrop.addEventListener('click', closeModal);
+  portalForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    portalNote.textContent = 'This is a demo interface — no live accounts are connected. Contact the Kabiyet branch to activate portal access.';
+  });
+
+  /* ---------- Contact form ---------- */
+  var contactForm = document.getElementById('contact-form');
+  var formSuccess = document.getElementById('form-success');
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+    formSuccess.classList.remove('hidden');
+    contactForm.reset();
+    formSuccess.focus();
+  });
+
+})();
+</script>
+</body>
+</html>
